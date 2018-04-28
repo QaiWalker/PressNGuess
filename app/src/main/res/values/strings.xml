@@ -3,4 +3,7 @@
     <string name="play">Play!</string>
     <string name="score">Score</string>
     <string name="question">What Instrument sound is this?</string>
+    <string name="your">Your Score:</string>
+    <string name="high">Highest Score:</string>
+    <string name="try">Try Again!</string>
 </resources>

@@ -1,6 +1,14 @@
 package com.example.qaite.pressnguess;
 
 public class Choices {
+
+    private String questions [] = {
+      "1. Can you guess what Instrument is this?",
+      "2. What do you think it sounds like?",
+      "3. Sounds familiar?",
+      "4. Try guessing the sound!"
+    };
+
     private String instruments [][] = {
             {"Tuba", "Trombone", "Clarinet", "Piccolo"},
             {"Euphonium", "Flute", "Trumpet", "Drums"},
@@ -8,6 +16,11 @@ public class Choices {
             {"French Horn", "Tuba", "Clarinet", "Timpani"}
     };
     private String answers [] = {"Clarinet", "Flute", "Saxophone", "French Horn"};
+
+    public String getQuestion(int a){
+        String question = questions[a];
+        return question;
+    }
 
     public String getChoice (int index, int num){
         String choice0 = instruments[index][num-1];
@@ -18,4 +31,5 @@ public class Choices {
         String answer =  answers[a];
         return answer;
     }
+    public int getLength() { return questions.length; }
 }
