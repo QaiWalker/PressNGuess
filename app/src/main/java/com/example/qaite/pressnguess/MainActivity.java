@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final MediaPlayer clarinetSound = MediaPlayer.create(this, R.raw.clarinet);
+        final MediaPlayer clarinetSoundMP = MediaPlayer.create(this, R.raw.clarinet);
 
     }
 
