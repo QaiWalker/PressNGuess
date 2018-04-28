@@ -10,12 +10,12 @@ public class Choices {
     };
 
     private String instruments [][] = {
-            {"Tuba", "Trombone", "Clarinet", "Piccolo"},
-            {"Euphonium", "Flute", "Trumpet", "Drums"},
-            {"Xylophone", "Saxophone", "Oboe", "Bassoon"},
-            {"French Horn", "Tuba", "Clarinet", "Timpani"}
+            {"Tuba", "Trombone", "CLARINET", "Piccolo"},
+            {"Euphonium", "FLUTE", "Trumpet", "Drums"},
+            {"Xylophone", "SAXOPHONE", "Oboe", "Bassoon"},
+            {"FRENCH HORN", "Tuba", "Bongo", "Timpani"}
     };
-    private String answers [] = {"Clarinet", "Flute", "Saxophone", "French Horn"};
+    private String answers [] = {"CLARINET", "FLUTE", "SAXOPHONE", "FRENCH HORN"};
 
     public String getQuestion(int a){
         String question = questions[a];
