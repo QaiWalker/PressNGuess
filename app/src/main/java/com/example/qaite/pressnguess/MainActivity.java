@@ -13,7 +13,6 @@ public class MainActivity extends AppCompatActivity {
 
     private Choices theChoices = new Choices();
     private TextView tvQuestion;
-    private TextView tvScore;
     private TextView tvShow;
     private Button btn1;
     private Button btn2;
@@ -31,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         tvQuestion = (TextView)findViewById(R.id.textViewQuestion);
-        tvScore = (TextView)findViewById(R.id.textViewScore);
         tvShow = (TextView)findViewById(R.id.textViewShow);
         btn1 = (Button)findViewById(R.id.button1);
         btn2 = (Button)findViewById(R.id.button2);
