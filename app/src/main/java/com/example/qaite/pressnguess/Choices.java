@@ -17,6 +17,13 @@ public class Choices {
     };
     private String answers [] = {"CLARINET", "FLUTE", "SAXOPHONE", "FRENCH HORN"};
 
+    private int music [] = {R.raw.clarinet, R.raw.flute, R.raw.frenchhorn, R.raw.saxophone};
+
+    public int getMusic(int a){
+        int music1 = music[a];
+        return music1;
+    }
+
     public String getQuestion(int a){
         String question = questions[a];
         return question;

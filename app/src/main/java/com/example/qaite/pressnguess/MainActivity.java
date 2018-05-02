@@ -18,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
     private Button btn2;
     private Button btn3;
     private Button btn4;
+    private Button btnPlay;
+    private MediaPlayer clarinetSound;
 
     private String correctAnswer;
     private int score = 0;
@@ -35,13 +37,14 @@ public class MainActivity extends AppCompatActivity {
         btn2 = (Button)findViewById(R.id.button2);
         btn3 = (Button)findViewById(R.id.button3);
         btn4 = (Button)findViewById(R.id.button4);
+        btnPlay = (Button)findViewById(R.id.buttonPlay);
         updateQuestion();
         updateScore(score);
 
 
 
 
-        final MediaPlayer clarinetSound = MediaPlayer.create(this, R.raw.clarinet);
+        clarinetSound = MediaPlayer.create(this, R.raw.clarinet);
         Button playSound = (Button)this.findViewById(R.id.buttonPlay);
         playSound.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,6 +63,8 @@ public class MainActivity extends AppCompatActivity {
             btn4.setText(theChoices.getChoice(currentQuestionNumber, 4));
             correctAnswer = theChoices.getCorrectAnswer(currentQuestionNumber);
             currentQuestionNumber++;
+            btnPlay.setText(theChoices.getMusic(currentQuestionNumber));
+
 
 
         }
@@ -77,7 +82,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClick(View view){
         Button answer = (Button) view;
-        if (answer.getText() == correctAnswer){
+        Toast.makeText(MainActivity.this,"Test " + answer.getText() + " " + correctAnswer, Toast.LENGTH_SHORT).show();
+        if (answer.getText().equals(correctAnswer)){
             score = score + 1;
             Toast.makeText(MainActivity.this, "Correct!", Toast.LENGTH_SHORT).show();
         } else {
