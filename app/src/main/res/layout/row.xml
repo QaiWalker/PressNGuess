@@ -15,5 +15,6 @@
         android:id="@+id/tvInstrument"
         android:layout_width="335dp"
         android:layout_height="51dp"
-        android:text="TextView" />
+        android:text="TextView"
+        android:textColor="#9400D3"/>
 </LinearLayout>

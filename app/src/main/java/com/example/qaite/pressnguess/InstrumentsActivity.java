@@ -96,6 +96,12 @@ public class InstrumentsActivity extends AppCompatActivity {
             mp = MediaPlayer.create(this, R.raw.saxophone);
         } else if (pos == "French Horn"){
             mp = MediaPlayer.create(this, R.raw.frenchhorn);
+        } else if (pos == "Tuba"){
+            mp = MediaPlayer.create(this, R.raw.tuba);
+        }else if (pos == "Trumpet"){
+            mp = MediaPlayer.create(this, R.raw.trumpet);
+        }else if (pos == "Drum"){
+            mp = MediaPlayer.create(this, R.raw.drum);
         }
 
         mp.start();
