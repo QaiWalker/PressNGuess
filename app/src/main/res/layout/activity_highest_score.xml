@@ -52,8 +52,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewHighestSc"
-        android:backgroundTint="#FFFFFF"
-        android:textColor="#9400D3"
+        android:backgroundTint="#9400D3"
+        android:textColor="#FFFFFF"
         />
 
 </android.support.constraint.ConstraintLayout>
